@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/6221846.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #5C4A3E;
+    border-bottom: 3px solid #8B7355;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.imagen {
+    height: 40px;
+    width: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+    color: #E6F2E6;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-desktop a {
+    color: #E6F2E6;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-desktop a:hover {
+    background-color: #8B7355;
+    color: #fff;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.inicio, .servicios, .contacto, .info {
+    padding: 20px;
+    text-align: center;
+}
+
+.inicio {
+    font-size: 18px;
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.titulo h1 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.titulo img {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.titulo img.carpa {
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.servicios {
+    background-color: #E6F2E6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.servicios h1 {
+    font-size: 2rem;
+    color: #4A6B3F;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicio-item {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 2px solid #8B7355;
+}
+
+.servicio-item:hover {
+    transform: translateY(-10px);
+}
+
+.servicio-imagen img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #8B7355;
+}
+
+.servicio-item p {
+    padding: 15px;
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+}
+
+.centro {
+    grid-column: 2 / 3;
+}
+
+.contacto, .info {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+header {
+    background-image: url('img/wood-texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacto {
+    background-color: #E6F2E6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contacto h1 {
+    font-size: 2rem;
+    color: #4A6B3F;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contacto .contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.contacto .info-item {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8B7355;
+}
+
+.contacto .info-item h2 {
+    font-size: 1.5rem;
+    color: #4A6B3F;
+    margin-bottom: 10px;
+}
+
+.contacto .info-item p {
+    font-size: 1rem;
+    color: #333333;
+}
+
+.info {
+    background-color: #E6F2E6; /* Fondo verde claro */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 2rem;
+    color: #4A6B3F; /* Verde oscuro */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.info .contenido {
+    max-width: 1200px; /* Ancho máximo más grande */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 20px;
+}
+
+/* Estilos para el mapa */
+.info .mapa {
+    grid-column: 1 / -1; /* Ocupa toda la fila */
+    background-color: #FFFFFF; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8B7355; /* Borde marrón */
+}
+
+.info .mapa h2 {
+    font-size: 1.8rem; /* Tamaño más grande para el subtítulo */
+    color: #4A6B3F; /* Verde oscuro */
+    margin-bottom: 20px;
+}
+
+.info .mapa iframe {
+    width: 100%;
+    height: 300px; /* Altura más grande para el mapa */
+    border: none;
+    border-radius: 10px;
+}
+
+/* Estilos para las tarifas y normas */
+.info .info-item {
+    background-color: #FFFFFF; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8B7355; /* Borde marrón */
+}
+
+.info .info-item h2 {
+    font-size: 1.5rem;
+    color: #4A6B3F; /* Verde oscuro */
+    margin-bottom: 10px;
+}
+
+.info .info-item p {
+    font-size: 1rem;
+    color: #333333; /* Texto gris oscuro */
+}
+
+/* Fila de dos para Tarifas y Normas */
+.info .fila-dos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px;
+    grid-column: 1 / -1; /* Ocupa toda la fila */
+}
+
+footer {
+    background-image: url('img/wood-texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    padding: 20px 10%;
+    text-align: center;
+    border-top: 3px solid #8B7355;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    color: #E6F2E6;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .redes-sociales a {
+    color: #E6F2E6;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+footer .redes-sociales a:hover {
+    color: #8B7355;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 5%;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-mobile a {
+        color: #eee5e5;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .nav-mobile a:hover {
+        color: rgb(247, 122, 138);
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .inicio {
+        margin-top: 100px;
+        font-size: 16px;
+    }
+
+    .titulo h1 {
+        font-size: 20px;
+    }
+
+    .titulo h2 {
+        font-size: 28px;
+    }
+
+    .titulo img {
+        width: 60%;
+    }
+
+    .servicios h1 {
+        font-size: 1.5rem;
+    }
+
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .centro {
+        grid-column: 1 / -1;
+    }
+
+    .servicio-item {
+        margin-bottom: 20px;
+    }
+
+    .contacto {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .info .mapa iframe {
+        height: 250px; /* Altura más pequeña para el mapa en móviles */
+    }
+
+    .info .fila-dos {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+
+    footer {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio-item p {
+        font-size: 0.9rem;
+    }
+
+    .titulo h1 {
+        font-size: 18px;
+    }
+
+    .titulo h2 {
+        font-size: 24px;
+    }
+
+    .titulo img {
+        width: 80%;
+    }
+
+    footer {
+        margin-bottom: 40px;
+    }
+    .info .mapa iframe {
+        height: 250px;
+    }
+    .info .fila-dos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .info .mapa iframe {
+        height: 250px;
+    }
+    .info .fila-dos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer {
+        margin-bottom: 40px;
+    }
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .centro {
+        grid-column: 1 / -1;
+    }
+}
